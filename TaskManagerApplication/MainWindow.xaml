@@ -1,0 +1,139 @@
+﻿<Window x:Class="TaskManagerApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskManagerApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="65,108,0,0" TextWrapping="Wrap" Text="Дата: " VerticalAlignment="Top" Width="58"/>
+        <!--<Menu HorizontalAlignment="Left" Height="24" Margin="362,105,0,0" VerticalAlignment="Top" Width="100">
+            <MenuItem Header="Выбор времени" HorizontalAlignment="Left" Width="100">
+                <MenuItem Header="13:00" HorizontalAlignment="Left" Width="134" Margin="0,0,-34,0"></MenuItem>
+            </MenuItem>
+        </Menu>-->
+        <ComboBox x:Name="hoursComboBox" HorizontalAlignment="Left" Margin="331,104,0,0" VerticalAlignment="Top" Width="59" Height="24">
+            <TextBlock>0</TextBlock>
+            <TextBlock>1</TextBlock>
+            <TextBlock>2</TextBlock>
+            <TextBlock>3</TextBlock>
+            <TextBlock>4</TextBlock>
+            <TextBlock>5</TextBlock>
+            <TextBlock>6</TextBlock>
+            <TextBlock>7</TextBlock>
+            <TextBlock>8</TextBlock>
+            <TextBlock>9</TextBlock>
+            <TextBlock>10</TextBlock>
+            <TextBlock>11</TextBlock>
+            <TextBlock>12</TextBlock>
+            <TextBlock>13</TextBlock>
+            <TextBlock>14</TextBlock>
+            <TextBlock>15</TextBlock>
+            <TextBlock>16</TextBlock>
+            <TextBlock>17</TextBlock>
+            <TextBlock>18</TextBlock>
+            <TextBlock>19</TextBlock>
+            <TextBlock>20</TextBlock>
+            <TextBlock>21</TextBlock>
+            <TextBlock>22</TextBlock>
+            <TextBlock>23</TextBlock>
+
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="251,108,0,0" TextWrapping="Wrap" Text="Время часа:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="421,108,0,0" TextWrapping="Wrap" Text="Время минуты:" VerticalAlignment="Top"/>
+        <ComboBox x:Name="minutesComboBox" HorizontalAlignment="Left" Margin="523,104,0,0" VerticalAlignment="Top" Width="59" Height="24">
+            <TextBlock><Run Text="0"/></TextBlock>
+            <TextBlock><Run Text="1"/></TextBlock>
+            <TextBlock><Run Text="2"/></TextBlock>
+            <TextBlock><Run Text="3"/></TextBlock>
+            <TextBlock><Run Text="4"/></TextBlock>
+            <TextBlock><Run Text="5"/></TextBlock>
+            <TextBlock><Run Text="6"/></TextBlock>
+            <TextBlock><Run Text="7"/></TextBlock>
+            <TextBlock><Run Text="8"/></TextBlock>
+            <TextBlock><Run Text="9"/></TextBlock>
+            <TextBlock><Run Text="10"/></TextBlock>
+            <TextBlock><Run Text="11"/></TextBlock>
+            <TextBlock><Run Text="12"/></TextBlock>
+            <TextBlock><Run Text="13"/></TextBlock>
+            <TextBlock><Run Text="14"/></TextBlock>
+            <TextBlock><Run Text="15"/></TextBlock>
+            <TextBlock><Run Text="16"/></TextBlock>
+            <TextBlock><Run Text="17"/></TextBlock>
+            <TextBlock><Run Text="18"/></TextBlock>
+            <TextBlock><Run Text="19"/></TextBlock>
+            <TextBlock><Run Text="20"/></TextBlock>
+            <TextBlock><Run Text="21"/></TextBlock>
+            <TextBlock><Run Text="22"/></TextBlock>
+            <TextBlock><Run Text="23"/></TextBlock>
+            <TextBlock>24</TextBlock>
+            <TextBlock>25</TextBlock>
+            <TextBlock>26</TextBlock>
+            <TextBlock>27</TextBlock>
+            <TextBlock>28</TextBlock>
+            <TextBlock>29</TextBlock>
+            <TextBlock>30</TextBlock>
+            <TextBlock>31</TextBlock>
+            <TextBlock>32</TextBlock>
+            <TextBlock>33</TextBlock>
+            <TextBlock>34</TextBlock>
+            <TextBlock>35</TextBlock>
+            <TextBlock>36</TextBlock>
+            <TextBlock>37</TextBlock>
+            <TextBlock>38</TextBlock>
+            <TextBlock>39</TextBlock>
+            <TextBlock>40</TextBlock>
+            <TextBlock>41</TextBlock>
+            <TextBlock>42</TextBlock>
+            <TextBlock>43</TextBlock>
+            <TextBlock>44</TextBlock>
+            <TextBlock>45</TextBlock>
+            <TextBlock>46</TextBlock>
+            <TextBlock>47</TextBlock>
+            <TextBlock>48</TextBlock>
+            <TextBlock>49</TextBlock>
+            <TextBlock>50</TextBlock>
+            <TextBlock>51</TextBlock>
+            <TextBlock>52</TextBlock>
+            <TextBlock>53</TextBlock>
+            <TextBlock>54</TextBlock>
+            <TextBlock>55</TextBlock>
+            <TextBlock>56</TextBlock>
+            <TextBlock>57</TextBlock>
+            <TextBlock>58</TextBlock>
+            <TextBlock>59</TextBlock>
+
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="65,160,0,0" TextWrapping="Wrap" Text="Повторение: " VerticalAlignment="Top"/>
+        <ComboBox x:Name="reiterationComboBox" HorizontalAlignment="Left" Margin="147,152,0,0" VerticalAlignment="Top" Width="120" Height="24">
+            <TextBlock x:Name="oneWeekTextBlock" >Раз в неделю</TextBlock>
+            <TextBlock x:Name="oneMonthTextBlock" Text="Раз в месяц"></TextBlock>
+            <TextBlock x:Name="oneYearTextBlock">Раз в год</TextBlock>
+
+        </ComboBox>
+        <DatePicker x:Name="datePicker" HorizontalAlignment="Left" Margin="147,104,0,0"  VerticalAlignment="Top" Height="24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="308,160,0,0" TextWrapping="Wrap" Text="Тип операции: " VerticalAlignment="Top"/>
+        <ComboBox x:Name="operationComboBox"  HorizontalAlignment="Left" Margin="421,152,0,0" VerticalAlignment="Top" Width="120" Height="24">
+            <TextBlock x:Name="emailTextBlock">Email</TextBlock>
+            <!--<MenuItem Header="Ema" HorizontalAlignment="Left" Click="MenuItem_Click"></MenuItem>-->
+            <TextBlock x:Name="downloadTextBlock">Скачка файла</TextBlock>
+            <TextBlock x:Name="movingDirectoryTextBlock">Перемещение каталога</TextBlock>
+
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="308,201,0,0" TextWrapping="Wrap" Text="Откуда:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="308,232,0,0" TextWrapping="Wrap" Text="Куда: " VerticalAlignment="Top" RenderTransformOrigin="-0.122,0.625"/>
+        <TextBox x:Name="fromTextBox" HorizontalAlignment="Left" Height="23" Margin="405,200,0,0" TextWrapping="Wrap" Text="(если отправка сообщения, не трогать)" VerticalAlignment="Top" Width="355"/>
+        <TextBox x:Name="whereTextBox" HorizontalAlignment="Left" Height="23" Margin="405,231,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="355"/>
+        <Button x:Name="startButton" Content="Задать" HorizontalAlignment="Left" Margin="674,289,0,0" VerticalAlignment="Top" Width="75" Click="StartButtonClick"/>
+        <!--<ComboBox HorizontalAlignment="Left" Margin="147,104,0,0" VerticalAlignment="Top" Width="99" Height="24">
+            <TextBlock>Пн</TextBlock>
+            <TextBlock>Вт</TextBlock>
+            <TextBlock>Ср</TextBlock>
+            <TextBlock>Чт</TextBlock>
+            <TextBlock>Пт</TextBlock>
+            <TextBlock>Сб</TextBlock>
+            <TextBlock>Вс</TextBlock>
+        </ComboBox>-->
+    </Grid>
+</Window>
